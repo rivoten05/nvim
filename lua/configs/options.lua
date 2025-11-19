@@ -90,8 +90,3 @@ g.loaded_ruby_provider = 0
 -- Global variables
 g.mapleader = " "
 g.background = "dark"
-
--- LazyVim LSP settings
-g.lazyvim_rust_diagnostics = "rust-analyzer"
-g.lazyvim_python_lsp = "pyright"
-g.lazyvim_python_ruff = "ruff"
