@@ -29,9 +29,7 @@ function M.setup()
 			},
 			completion = {
 				menu = {
-					border = "rounded",
 					auto_show = true,
-					scrollbar = true,
 					draw = {
 						columns = {
 							{ "label", "label_description", gap = 1 },
