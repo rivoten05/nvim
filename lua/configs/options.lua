@@ -1,5 +1,4 @@
 local opt = vim.opt
-local o = vim.o
 local g = vim.g
 
 -- Neovide settings (cleaner and more consistent)
