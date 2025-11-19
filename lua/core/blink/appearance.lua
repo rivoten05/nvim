@@ -26,4 +26,6 @@ return {
 		Operator = "󰆕",
 		TypeParameter = "󰊄",
 	},
+	vim.api.nvim_set_hl(0, "BlinkCmpKindCodeium", { fg = "#8CC55B" }),
+	vim.api.nvim_set_hl(0, "BlinkCmpKindSnippet", { fg = "#FF9D00" }),
 }
