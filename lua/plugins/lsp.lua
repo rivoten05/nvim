@@ -31,6 +31,7 @@ return {
 		lazy = true,
 		event = { "BufReadPre", "BufNewFile" },
 		dependencies = { "williamboman/mason-lspconfig.nvim" },
+		opts = { diagnostics = { virtual_text = false } },
 		config = function()
 			require("core.lsp").setup()
 		end,
