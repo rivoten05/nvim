@@ -40,10 +40,6 @@ return {
 				priority = 250,
 			},
 		},
-		space = {
-			enabled = true,
-			smart = true,
-		},
 		debug = false,
 	},
 }
