@@ -37,33 +37,9 @@ return {
 		end,
 	},
 	{
-		"https://git.sr.ht/~whynothugo/lsp_lines.nvim",
-		event = "LspAttach",
-		config = function()
-			require("lsp_lines").setup()
-			vim.diagnostic.config({
-				virtual_lines = true,
-				virtual_text = false,
-				underline = true,
-				update_in_insert = false,
-				severity_sort = true,
-				float = {
-					border = "rounded",
-					source = true,
-				},
-				signs = {
-					text = {
-						[vim.diagnostic.severity.ERROR] = "󰅚 ",
-						[vim.diagnostic.severity.WARN] = "󰀪 ",
-						[vim.diagnostic.severity.INFO] = "󰋽 ",
-						[vim.diagnostic.severity.HINT] = "󰌶 ",
-					},
-					numhl = {
-						[vim.diagnostic.severity.ERROR] = "ErrorMsg",
-						[vim.diagnostic.severity.WARN] = "WarningMsg",
-					},
-				},
-			})
-		end,
+		"rachartier/tiny-inline-diagnostic.nvim",
+		event = "VeryLazy",
+		priority = 1000,
+		opts = {},
 	},
 }
