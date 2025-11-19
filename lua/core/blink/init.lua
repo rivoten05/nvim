@@ -27,7 +27,7 @@ function M.setup()
 			keymap = {
 				["<Tab>"] = { "show", "accept" },
 			},
-			completion = { menu = { auto_show = true } },
+			completion = { menu = { border = "rounded", auto_show = true } },
 		},
 	}
 
