@@ -110,13 +110,6 @@ map("n", "<leader>fs", function()
 	end
 end, { desc = "Find Symbols" })
 
-map("n", "<leader>fS", function()
-	local ok, _ = pcall(builtin.lsp_workspace_symbols)
-	if not ok then
-		vim.notify("Workspace symbols not available", vim.log.levels.WARN)
-	end
-end, { desc = "Find Workspace Symbols" })
-
 -- Quick search shortcuts
 map("n", "<leader>/", function()
 	local ok, _ = pcall(builtin.live_grep)
