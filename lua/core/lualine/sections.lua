@@ -46,6 +46,7 @@ M.active = {
 			end,
 			padding = { left = 1, right = 1 },
 		},
+		require("triforce.lualine").session_time,
 	},
 }
 
