@@ -13,6 +13,7 @@ vim.api.nvim_create_autocmd("ColorScheme", {
 	pattern = "*", -- Apply this to every colorscheme change
 	callback = function()
 		lualine_module.setup()
+		vim.cmd("redraw!")
 	end,
 })
 
