@@ -1,4 +1,6 @@
-vim.cmd("colorscheme catppuccin")
+if vim.g.colors_name == nil then
+	vim.cmd("colorscheme catppuccin-mocha")
+end
 
 --remove auto-comment
 vim.cmd("autocmd BufEnter * set formatoptions-=cro")
