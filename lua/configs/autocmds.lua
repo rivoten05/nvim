@@ -1,10 +1,14 @@
 if vim.g.colors_name == nil then
-	vim.cmd("colorscheme catppuccin-mocha")
+	vim.cmd("colorscheme cyberdream")
 end
 
---remove auto-comment
-vim.cmd("autocmd BufEnter * set formatoptions-=cro")
-vim.cmd("autocmd BufEnter * setlocal formatoptions-=cro")
+vim.api.nvim_create_autocmd("BufWinEnter", {
+	group = vim.api.nvim_create_augroup("no_auto_comment", { clear = true }),
+	callback = function()
+		-- remove c, r, o locally
+		vim.opt_local.formatoptions:remove({ "c", "r", "o" })
+	end,
+})
 
 local lualine_module = require("core.lualine")
 vim.api.nvim_create_augroup("LualineThemeReload", { clear = true })

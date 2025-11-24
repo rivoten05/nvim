@@ -1,6 +1,5 @@
 return {
 	"saghen/blink.indent",
-	version = "*",
 	dependencies = {
 		"saghen/blink.download",
 	},
