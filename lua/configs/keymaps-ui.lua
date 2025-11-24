@@ -10,6 +10,11 @@ basic_map("n", "<leader>ur", "<Cmd>update<CR><Cmd>source<CR>", "Reload nvim")
 safe_map("n", "<leader>ut", function()
 	require("telescope.builtin").colorscheme({
 		enable_preview = true,
+		previewer = false,
+		layout_config = {
+			width = 0.3,
+			height = 0.5,
+		},
 		ignore_builtins = true,
 	})
 end, "Telescope: Colorscheme Picker (Live Preview)")
