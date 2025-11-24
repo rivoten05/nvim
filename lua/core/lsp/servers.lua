@@ -5,6 +5,7 @@ local M = {
 	"dartls",
 	"pyrefly",
 	"rust_analyzer",
+	"gopls",
 }
 
 return M
